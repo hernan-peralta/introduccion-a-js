@@ -1,5 +1,5 @@
 let formulario = document.getElementsByClassName("tiempovideos");
-let agregarClase = document.getElementById("agregarform");
+let agregarClase = document.getElementById("agregar-video");
 let cantidadClases = 1;
 let clonDeFormulario = formulario[0].cloneNode(true); //tengo que clonar el clon del formulario sino me clona tambien los valores que estan dentro del campo de texto
 let $campoSegundos = document.getElementsByClassName("segundos");
