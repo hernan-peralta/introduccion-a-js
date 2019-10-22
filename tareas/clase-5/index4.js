@@ -10,7 +10,7 @@ let $lista = document.querySelectorAll("li");
 let numeros = [];
 
 for (let i =0; i<$lista.length; i++){
-    numeros.push((Number($lista[i].innerHTML)));
+    numeros.push(Number($lista[i].innerHTML));
 }
 
 
