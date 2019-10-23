@@ -3,9 +3,9 @@
 //cuando el usuario haga click en el botón "calcular", mostrar el salario mensual
 // en una caja de texto deshabilitada. --> <input type="text" disabled id="salario-mensual"/>
 
-let salarioAnual = document.getElementById('salarioanual');
-let salarioMensual = document.getElementById('salariomensual');
-let boton = document.getElementById('botoncalcular');
+let salarioAnual = document.getElementById('salario-anual');
+let salarioMensual = document.getElementById('salario-mensual');
+let boton = document.getElementById('boton-calcular');
 
 
 boton.onclick = () => {

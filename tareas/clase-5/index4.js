@@ -27,27 +27,27 @@ document.getElementById("promedio").innerHTML = "El promedio es: " + promedio;
 
 
 //calculo el numero mas pequeño
-let numeropequeño = numeros[0];
+let numeroPequeño = numeros[0];
 for (let i=0; i<numeros.length; i++){
-    if (numeros[i] < numeropequeño){
-        numeropequeño = numeros[i];
+    if (numeros[i] < numeroPequeño){
+        numeroPequeño = numeros[i];
     }
 }
-document.getElementById("maspequeño").innerHTML = "El numero mas pequeño es: " + numeropequeño;
-//document.getElementById("maspequeño").innerHTML = "El numero mas pequeño es: " + Math.min(...numeros); //con esta forma no hace falta loops ni nada
+document.getElementById("mas-pequeño").innerHTML = "El numero mas pequeño es: " + numeroPequeño;
+//document.getElementById("mas-pequeño").innerHTML = "El numero mas pequeño es: " + Math.min(...numeros); //con esta forma no hace falta loops ni nada
 
 
 
 
 //calculo el numero mas grande
-let numerogrande = numeros[0];
+let numeroGrande = numeros[0];
 for (let i=0; i<numeros.length; i++){
-    if (numeros[i] > numerogrande){
-        numerogrande = numeros[i];
+    if (numeros[i] > numeroGrande){
+        numeroGrande = numeros[i];
     }
 }
-document.getElementById("masgrande").innerHTML = "El numero mas grande es: " + numerogrande;
-// document.getElementById("masgrande").innerHTML = "El numero mas grande es: " + Math.max(...numeros); //con esta forma no hace falta loops ni nada
+document.getElementById("mas-grande").innerHTML = "El numero mas grande es: " + numeroGrande;
+// document.getElementById("mas-grande").innerHTML = "El numero mas grande es: " + Math.max(...numeros); //con esta forma no hace falta loops ni nada
 
 
 
@@ -65,19 +65,19 @@ for (let i=0; i<numeros.length; i++){
 }
 
 //ahora busco el que tenga la mayor cantidad de apariciones
-let masfrecuente = 0;
-let numeromasfrecuente = 0;
+let masFrecuente = 0;
+let numeroMasFrecuente = 0;
 for (let key in frecuencia){
-    if (frecuencia[key]>masfrecuente){
-        masfrecuente = frecuencia[key];
-        numeromasfrecuente = key;
+    if (frecuencia[key]>masFrecuente){
+        masFrecuente = frecuencia[key];
+        numeroMasFrecuente = key;
     };
 }
 
 
 let veces = "vez";
-if (masfrecuente > 1){
+if (masFrecuente > 1){
     veces = "veces";
 }
 
-document.getElementById("masfrecuente").innerHTML = `El numero mas frecuente es ${numeromasfrecuente} , y se repite ${masfrecuente} ${veces}.`;
+document.getElementById("mas-frecuente").innerHTML = `El numero mas frecuente es ${numeroMasFrecuente} , y se repite ${masFrecuente} ${veces}.`;

@@ -1,20 +1,21 @@
-let formulario = document.getElementsByClassName("tiempovideos");
+let formulario = document.getElementsByClassName("tiempo-videos");
 let agregarClase = document.getElementById("agregar-video");
 let cantidadClases = 1;
 let clonDeFormulario = formulario[0].cloneNode(true); //tengo que clonar el clon del formulario sino me clona tambien los valores que estan dentro del campo de texto
 let $campoSegundos = document.getElementsByClassName("segundos");
 let $campoMinutos = document.getElementsByClassName("minutos");
 let $campoHoras = document.getElementsByClassName("horas");
+let $numeroClase = document.getElementsByClassName("numero-clase")
 
 
 
 agregarClase.onclick = () => {
     cantidadClases ++;
     document.querySelector("div").appendChild(clonDeFormulario.cloneNode(true));
-    document.querySelector("nombreclase:last-of-type").innerHTML = "Clase " + cantidadClases; //para mas informacion sobre :last-of-type visitar https://stackoverflow.com/questions/39223343/shortest-way-to-get-last-element-by-class-name-in-javascript
+    $numeroClase[$numeroClase.length-1].innerHTML = "Clase " + cantidadClases; // en el lado izquierdo de la asignacion selecciono el ultimo elemento del array que contiene la clase "nombreclase"
 }
 
-document.getElementById("calculartotal").onclick = () => {
+document.getElementById("calcular-total").onclick = () => {
     let horas = 0;
     let minutos = 0;
     let segundos = 0;
